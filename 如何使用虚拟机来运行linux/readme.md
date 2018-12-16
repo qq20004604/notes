@@ -1,100 +1,100 @@
-##1¡¢ÏÂÔØ
+## 1ã€ä¸‹è½½
 
-ÐéÄâ»úÈí¼þÊ¹ÓÃOracle VM VirtualBox£¬ÓÅÊÆÊÇ¿ªÔ´¡£
+è™šæ‹Ÿæœºè½¯ä»¶ä½¿ç”¨Oracle VM VirtualBoxï¼Œä¼˜åŠ¿æ˜¯å¼€æºã€‚
 
-½øÈëÒÔÏÂÁ´½Ó£¬È»ºóÏÂÔØ£º
+è¿›å…¥ä»¥ä¸‹é“¾æŽ¥ï¼Œç„¶åŽä¸‹è½½ï¼š
 
 https://www.oracle.com/technetwork/cn/server-storage/virtualbox/downloads/index.html
 
-##2¡¢°²×°
+##2ã€å®‰è£…
 
-´ò¿ª£¬°²×°¾ÍÐÐ£¬½¨Òé²»Òª·ÅÔÚCÅÌ
+æ‰“å¼€ï¼Œå®‰è£…å°±è¡Œï¼Œå»ºè®®ä¸è¦æ”¾åœ¨Cç›˜
 
-##3¡¢ÐÂ½¨ÐéÄâ»ú
+##3ã€æ–°å»ºè™šæ‹Ÿæœº
 
-####1¡¢ÐÂ½¨
+####1ã€æ–°å»º
 
-Ê×ÏÈ´ò¿ª VirtualBox£¬µã»÷ÐÂ½¨£¬ÌîÐ´ÐéÄâ»úÃû×Ö£¬ÈçÏÂÍ¼£º
+é¦–å…ˆæ‰“å¼€ VirtualBoxï¼Œç‚¹å‡»æ–°å»ºï¼Œå¡«å†™è™šæ‹Ÿæœºåå­—ï¼Œå¦‚ä¸‹å›¾ï¼š
 
 <img src='./01.jpg'/>
 
-####2¡¢·ÖÅäÄÚ´æ
+####2ã€åˆ†é…å†…å­˜
 
-µã»÷ÏÂÒ»²½£¬·ÖÅäÄÚ´æ¡£×¢Òâ¾¡Á¿²»Òª³¬¹ý3GB£¬ÀíÓÉÊÇÈç¹û³¬¹ý3GB£¬¿ÉÄÜ»á´¥·¢Ò»¸ö´íÎó£¨½â¾ö·½°¸²Î¿¼Õâ¸öÁ´½Ó£ºhttps://stackoverflow.com/questions/33304393/vt-x-is-disabled-in-the-bios-for-both-all-cpu-modes-verr-vmx-msr-all-vmx-disabl£©
+ç‚¹å‡»ä¸‹ä¸€æ­¥ï¼Œåˆ†é…å†…å­˜ã€‚æ³¨æ„å°½é‡ä¸è¦è¶…è¿‡3GBï¼Œç†ç”±æ˜¯å¦‚æžœè¶…è¿‡3GBï¼Œå¯èƒ½ä¼šè§¦å‘ä¸€ä¸ªé”™è¯¯ï¼ˆè§£å†³æ–¹æ¡ˆå‚è€ƒè¿™ä¸ªé“¾æŽ¥ï¼šhttps://stackoverflow.com/questions/33304393/vt-x-is-disabled-in-the-bios-for-both-all-cpu-modes-verr-vmx-msr-all-vmx-disablï¼‰
 
 
-ÎÒÑ¡Ôñ·ÖÅä2048MB£¨¼´2GBÄÚ´æ£©¡£
+æˆ‘é€‰æ‹©åˆ†é…2048MBï¼ˆå³2GBå†…å­˜ï¼‰ã€‚
 
 <img src='./02.jpg'/>
 
-####3¡¢ÐéÄâÓ²ÅÌ
+####3ã€è™šæ‹Ÿç¡¬ç›˜
 
-·ÖÅäÐéÄâÓ²ÅÌ£¬ÍÆ¼ö10GB¡£
+åˆ†é…è™šæ‹Ÿç¡¬ç›˜ï¼ŒæŽ¨è10GBã€‚
 
 <img src='./03.jpg'/>
 
-Ê¹ÓÃÄ¬ÈÏÑ¡Ïî£¬µã»÷´´½¨°´Å¥ºó£¬³öÏÖÒ»¸öÐÂµ¯´°¡£
+ä½¿ç”¨é»˜è®¤é€‰é¡¹ï¼Œç‚¹å‡»åˆ›å»ºæŒ‰é’®åŽï¼Œå‡ºçŽ°ä¸€ä¸ªæ–°å¼¹çª—ã€‚
 
-ÔÚÐÂµ¯´°Àï£¬Ç°2²½Ö±½Óµã»÷ÏÂÒ»²½£¬µÚÈý²½Ñ¡ÔñÎ»ÖÃµÄÊ±ºò£¬½¨Òé¸ÄÒ»ÏÂÎ»ÖÃ£¨Ä¬ÈÏÊÇÔÚCÅÌ£©£¬²¢ÇÒÎÒ½«´óÐ¡µ÷Õûµ½15GB£¬µã»÷´´½¨°´Å¥¡£
+åœ¨æ–°å¼¹çª—é‡Œï¼Œå‰2æ­¥ç›´æŽ¥ç‚¹å‡»ä¸‹ä¸€æ­¥ï¼Œç¬¬ä¸‰æ­¥é€‰æ‹©ä½ç½®çš„æ—¶å€™ï¼Œå»ºè®®æ”¹ä¸€ä¸‹ä½ç½®ï¼ˆé»˜è®¤æ˜¯åœ¨Cç›˜ï¼‰ï¼Œå¹¶ä¸”æˆ‘å°†å¤§å°è°ƒæ•´åˆ°15GBï¼Œç‚¹å‡»åˆ›å»ºæŒ‰é’®ã€‚
 
 <img src='./04.jpg'/>
 
-####4¡¢Æô¶¯
+####4ã€å¯åŠ¨
 
-´ËÊ±´´½¨Íê±Ï£¬ÈçÏÂÍ¼£¬Ë«»÷Æô¶¯¡£
+æ­¤æ—¶åˆ›å»ºå®Œæ¯•ï¼Œå¦‚ä¸‹å›¾ï¼ŒåŒå‡»å¯åŠ¨ã€‚
 
 <img src='./05.jpg'/>
 
-µ«ÊÇ³õÊ¼Çé¿öÏÂÈçÏÂÍ¼£¬Ô­ÒòÊÇÄãÃ»ÓÐ°²×°²Ù×÷ÏµÍ³¡£Õâ¸öÊ±ºòÎÒÃÇÈ¥ÏÂÔØ Ubuntu ÏµÍ³¡£
+ä½†æ˜¯åˆå§‹æƒ…å†µä¸‹å¦‚ä¸‹å›¾ï¼ŒåŽŸå› æ˜¯ä½ æ²¡æœ‰å®‰è£…æ“ä½œç³»ç»Ÿã€‚è¿™ä¸ªæ—¶å€™æˆ‘ä»¬åŽ»ä¸‹è½½ Ubuntu ç³»ç»Ÿã€‚
 
 <img src='./06.jpg'/>
 
-##4¡¢ÏÂÔØUbuntuÏµÍ³
+##4ã€ä¸‹è½½Ubuntuç³»ç»Ÿ
 
-´ò¿ªÕâ¸öÍøÕ¾£ºhttps://www.ubuntu.com/download/server £¬È»ºóÏÂÔØLTS°æ±¾¡£
+æ‰“å¼€è¿™ä¸ªç½‘ç«™ï¼šhttps://www.ubuntu.com/download/server ï¼Œç„¶åŽä¸‹è½½LTSç‰ˆæœ¬ã€‚
 
-ÓÃÐéÄâ»úÈí¼þ¹ÒÔØÏÂÔØµÄ ISO ÎÄ¼þ£¬¹Òµ½Ä³¸ö¹âÅÌ·ûÏÂ£¬È»ºóÐéÄâ»úµÄÆô¶¯ÅÌÒ²ÐÞ¸ÄÎªÍ¬Ò»¸ö¡£
+ç”¨è™šæ‹Ÿæœºè½¯ä»¶æŒ‚è½½ä¸‹è½½çš„ ISO æ–‡ä»¶ï¼ŒæŒ‚åˆ°æŸä¸ªå…‰ç›˜ç¬¦ä¸‹ï¼Œç„¶åŽè™šæ‹Ÿæœºçš„å¯åŠ¨ç›˜ä¹Ÿä¿®æ”¹ä¸ºåŒä¸€ä¸ªã€‚
 
-##5¡¢Æô¶¯Ê§°Ü³£¼ûÎÊÌâ½â¾ö·½°¸
+##5ã€å¯åŠ¨å¤±è´¥å¸¸è§é—®é¢˜è§£å†³æ–¹æ¡ˆ
 
-ÈçÏÂÍ¼ÐÞ¸Ä£º
+å¦‚ä¸‹å›¾ä¿®æ”¹ï¼š
 
 <img src='./07.jpg'/>
 
-²»È»»á±¨´íÎó ``No bootable medium found``
+ä¸ç„¶ä¼šæŠ¥é”™è¯¯ ``No bootable medium found``
 
-Èç¹ûÔËÐÐµÄÊ±ºòÌáÊ¾£º``this kernel requires an x86-64 cpu``£¬ËµÃ÷Ã»ÓÐÆôÓÃ ``intel Virtualization Technology``£¬½â¾ö·½°¸²Î¿¼£ºhttps://blog.csdn.net/zhouyongku/article/details/45172897
+å¦‚æžœè¿è¡Œçš„æ—¶å€™æç¤ºï¼š``this kernel requires an x86-64 cpu``ï¼Œè¯´æ˜Žæ²¡æœ‰å¯ç”¨ ``intel Virtualization Technology``ï¼Œè§£å†³æ–¹æ¡ˆå‚è€ƒï¼šhttps://blog.csdn.net/zhouyongku/article/details/45172897
 
-Í¬Ê±£¬ÏµÍ³ÐèÒªÑ¡Ôñ 64bit µÄ£¬ÈçÏÂÍ¼£º
+åŒæ—¶ï¼Œç³»ç»Ÿéœ€è¦é€‰æ‹© 64bit çš„ï¼Œå¦‚ä¸‹å›¾ï¼š
 
 <img src='./08.jpg'/>
 
-Õý³£Çé¿öÏÂ£¬»á×Ô¶¯´¥·¢°²×°£¬ÈçÏÂÍ¼
+æ­£å¸¸æƒ…å†µä¸‹ï¼Œä¼šè‡ªåŠ¨è§¦å‘å®‰è£…ï¼Œå¦‚ä¸‹å›¾
 
 <img src='./09.jpg'/>
 
-##6¡¢°²×°¹ý³ÌÖÐµÄÅäÖÃ
+##6ã€å®‰è£…è¿‡ç¨‹ä¸­çš„é…ç½®
 
-µÚÒ»²½£¬Ñ¡English£¬ÈçÍ¼£¬½ÓÏÂÀ´Ò»Â·ÏÂÒ»²½£¬Ö±µ½ÐèÒªÃû×ÖÎªÖ¹¡£
+ç¬¬ä¸€æ­¥ï¼Œé€‰Englishï¼Œå¦‚å›¾ï¼ŒæŽ¥ä¸‹æ¥ä¸€è·¯ä¸‹ä¸€æ­¥ï¼Œç›´åˆ°éœ€è¦åå­—ä¸ºæ­¢ã€‚
 
 <img src='./10.jpg'/>
 
-ÈçÍ¼£¬ÊäÈëÃû×Ö£¬È»ºó¼ÌÐøÊ¹ÓÃÄ¬ÈÏÑ¡Ïî£¬Ò»Â·ÏÂÒ»²½¡£
+å¦‚å›¾ï¼Œè¾“å…¥åå­—ï¼Œç„¶åŽç»§ç»­ä½¿ç”¨é»˜è®¤é€‰é¡¹ï¼Œä¸€è·¯ä¸‹ä¸€æ­¥ã€‚
 
 <img src='./11.jpg'/>
 
-°²×°Íê³ÉºóÈçÏÂÍ¼£¬µã»÷ ``Reboot Now`` Æô¶¯¡£
+å®‰è£…å®ŒæˆåŽå¦‚ä¸‹å›¾ï¼Œç‚¹å‡» ``Reboot Now`` å¯åŠ¨ã€‚
 
 <img src='./12.jpg'/>
 
-ÖØÆôºó£¬»áÌáÊ¾ÄãÒÆ³ýÐéÄâÅÌÆ¬£¬ÈçÏÂÍ¼£¬ÒÆ³ýºó¼ÌÐø¡£
+é‡å¯åŽï¼Œä¼šæç¤ºä½ ç§»é™¤è™šæ‹Ÿç›˜ç‰‡ï¼Œå¦‚ä¸‹å›¾ï¼Œç§»é™¤åŽç»§ç»­ã€‚
 
 <img src='./13.jpg'/>
 
-##7¡¢½øÈëÏµÍ³
+##7ã€è¿›å…¥ç³»ç»Ÿ
 
-ÔÚµÚÆß²½£¬Æô¶¯ÏµÍ³ºó£¬»áË¢³ö¼¸¸ö[OK]£¬µ«ÊÇÃ»ÓÐÊäÈëÄÚÈÝµÄµØ·½¡£Õâ¸öÊ±ºò£¬Òª°´Ò»ÏÂ»Ø³µ¼ü£¬ÏµÍ³¾Í»áÌáÊ¾ÄãÊäÈëÐÕÃûºÍÃÜÂëÁË¡£
+åœ¨ç¬¬ä¸ƒæ­¥ï¼Œå¯åŠ¨ç³»ç»ŸåŽï¼Œä¼šåˆ·å‡ºå‡ ä¸ª[OK]ï¼Œä½†æ˜¯æ²¡æœ‰è¾“å…¥å†…å®¹çš„åœ°æ–¹ã€‚è¿™ä¸ªæ—¶å€™ï¼Œè¦æŒ‰ä¸€ä¸‹å›žè½¦é”®ï¼Œç³»ç»Ÿå°±ä¼šæç¤ºä½ è¾“å…¥å§“åå’Œå¯†ç äº†ã€‚
 
-ÊäÈëºó£¬½øÈëÏµÍ³£¬ÈçÍ¼£º
+è¾“å…¥åŽï¼Œè¿›å…¥ç³»ç»Ÿï¼Œå¦‚å›¾ï¼š
 
 <img src='./14.jpg'/>
