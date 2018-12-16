@@ -6,19 +6,19 @@
 
 https://www.oracle.com/technetwork/cn/server-storage/virtualbox/downloads/index.html
 
-##2、安装
+## 2、安装
 
 打开，安装就行，建议不要放在C盘
 
-##3、新建虚拟机
+## 3、新建虚拟机
 
-####1、新建
+#### 1、新建
 
 首先打开 VirtualBox，点击新建，填写虚拟机名字，如下图：
 
 <img src='./01.jpg'/>
 
-####2、分配内存
+#### 2、分配内存
 
 点击下一步，分配内存。注意尽量不要超过3GB，理由是如果超过3GB，可能会触发一个错误（解决方案参考这个链接：https://stackoverflow.com/questions/33304393/vt-x-is-disabled-in-the-bios-for-both-all-cpu-modes-verr-vmx-msr-all-vmx-disabl）
 
@@ -27,7 +27,7 @@ https://www.oracle.com/technetwork/cn/server-storage/virtualbox/downloads/index.
 
 <img src='./02.jpg'/>
 
-####3、虚拟硬盘
+#### 3、虚拟硬盘
 
 分配虚拟硬盘，推荐10GB。
 
@@ -39,7 +39,7 @@ https://www.oracle.com/technetwork/cn/server-storage/virtualbox/downloads/index.
 
 <img src='./04.jpg'/>
 
-####4、启动
+#### 4、启动
 
 此时创建完毕，如下图，双击启动。
 
@@ -49,13 +49,13 @@ https://www.oracle.com/technetwork/cn/server-storage/virtualbox/downloads/index.
 
 <img src='./06.jpg'/>
 
-##4、下载Ubuntu系统
+## 4、下载Ubuntu系统
 
 打开这个网站：https://www.ubuntu.com/download/server ，然后下载LTS版本。
 
 用虚拟机软件挂载下载的 ISO 文件，挂到某个光盘符下，然后虚拟机的启动盘也修改为同一个。
 
-##5、启动失败常见问题解决方案
+## 5、启动失败常见问题解决方案
 
 如下图修改：
 
@@ -73,7 +73,7 @@ https://www.oracle.com/technetwork/cn/server-storage/virtualbox/downloads/index.
 
 <img src='./09.jpg'/>
 
-##6、安装过程中的配置
+## 6、安装过程中的配置
 
 第一步，选English，如图，接下来一路下一步，直到需要名字为止。
 
@@ -91,7 +91,7 @@ https://www.oracle.com/technetwork/cn/server-storage/virtualbox/downloads/index.
 
 <img src='./13.jpg'/>
 
-##7、进入系统
+## 7、进入系统
 
 在第七步，启动系统后，会刷出几个[OK]，但是没有输入内容的地方。这个时候，要按一下回车键，系统就会提示你输入姓名和密码了。
 
