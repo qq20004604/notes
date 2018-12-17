@@ -98,3 +98,104 @@ https://www.oracle.com/technetwork/cn/server-storage/virtualbox/downloads/index.
 输入后，进入系统，如图：
 
 <img src='./14.jpg'/>
+
+
+## 8、设置虚拟机网络模式
+
+有三种网络模式，桥接、NAT、Host-Only。
+
+详解见：https://www.cnblogs.com/ggjucheng/archive/2012/08/19/2646007.html
+
+我们这里使用桥接模式，像之前那样打开虚拟机的设置功能，如下图设置：
+
+<img src='./15.jpg'/>
+
+## 9、让Linux可以通过ftp来访问
+
+参考文章：https://blog.csdn.net/timothy93bp/article/details/77527531
+
+#### 1、下载 vsftpd
+
+输入命令：
+
+```
+sudo apt-get install vsftpd
+```
+
+如果报错 ``could not get lock /var/lib/dpkg/lock`` ，参考这个链接；https://itsfoss.com/could-not-get-lock-error/
+
+具体来说，先输入 ``ps aux | grep -i apt`` 搜索哪些占用了 apt，然后通过 ``sudo kill -9 进程id`` 的方式干掉他。
+
+安装的过程中，他会提示你会占用一些空间，升级一些东西和安装一些东西。输入 ``Y`` 然后回车确认即可。
+
+一会就安好了。
+
+#### 2、配置 ftp 的密码
+
+输入 ``sudo passwd ftp`` ，然后重复输入2次密码即可（账号名为你的默认账号名）。
+
+#### 3、修改配置文件
+
+输入 ``sudo vim /etc/vsftpd.conf`` 编辑配置文件。按下 ``i`` 进入编辑模式。
+
+这个文件的详细配置说明参考：https://blog.csdn.net/mengtianwxs/article/details/72997092
+
+1. ``listen=NO``改为　``listen=YES``；
+2. 删除 ``write_enable=YES`` 之前的 ``#`` 井号（即注释符号，下同）；
+3. 再取消如下配置前的注释符号：  
+```
+chroot_local_user=YES（是否将所有用户限制在主目录） 
+chroot_list_enable=YES（是否启动限制用户的名单） 
+chroot_list_file=/etc/vsftpd.chroot_list（可在文件中设置多个账号）
+```
+4. 按 esc 返回命令模式，再输入 ``:wq`` ，保存退出；
+
+输入 ``sudo service vsftpd restart`` 重启 ftp 服务器
+
+#### 4、安装 ssh
+
+参考文章：https://blog.csdn.net/netwalk/article/details/12952051
+
+首先，Ubuntu缺省没有安装SSH Server，使用以下命令安装：
+
+```
+sudo apt-get install openssh-server
+```
+
+然后输入 ``ps -e|grep ssh`` 确认 ssh 是否启动，如果显示 ``sshd`` 则表明已经启动了。
+
+没启动的话，输入：``sudo /etc/init.d/ssh start`` 启动；或者 ``sudo /etc/init.d/ssh restart`` 重新启动；
+
+#### 5、登录
+
+windows客户端可以下载 FileZilla Client 来进行FTP登录。
+
+如下图：
+
+* 协议选 SFTP；
+* 主机输入虚拟机的 IP（查询 ip 通过输入 ``ifconfig`` 命令，找 ``inet`` 后面的那个ip地址）；
+* 端口不填（默认是22）；
+* 输入用户名和密码；
+
+点击【连接】即可。
+
+<img src='./16.jpg'/>
+
+常见问题：
+
+1. 登录被拒绝怎么办？
+    1. 查看是否没有安装 ssh；
+    2. ssh服务是否没启动；
+    3. ``/etc/vsftpd.conf`` 是否按我所说的进行更改配置；
+    4. 重启一下 ssh 服务（命令见上面）；
+    5. 重启一下 ftp 服务器（命令见上面）；
+    6. 重启虚拟机；
+    7. 重启主机；
+    8. ping 一下试试（在主机输入``ping 虚拟机的ip地址``），能否ping通（ping不同说明ip可能是错的）；
+    9. 通过 ssh 登录一下试试（命令 ``ssh 用户名@ip地址``），登录不了可能是ssh服务没启动；
+    10. 总之，以上都正常的话，分别重启虚拟机和主机；
+
+登录成功的话，应该如下图：
+
+
+<img src='./17.jpg'/>
