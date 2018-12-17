@@ -1,3 +1,7 @@
+<p style='color:red;font-weight:bold;'>程序员技术交流、面试、职场、生活、游戏、相亲，综合讨论QQ群：387017550，群内经常发红包，欢迎加入</p>
+
+<p style='color:red;font-weight:bold;'>群福利：每周一次免费面试，在YY频道直播，可旁听，有往期录音</p>
+
 ## 1、下载
 
 虚拟机软件使用Oracle VM VirtualBox，优势是开源。
