@@ -104,7 +104,31 @@ https://www.oracle.com/technetwork/cn/server-storage/virtualbox/downloads/index.
 <img src='./14.jpg'/>
 
 
-## 8、设置虚拟机网络模式
+## 8、设置root密码
+
+此时，我们可以通过自己命名的账号登录，但这个账号并不是 root 账号。
+
+假如我们想登录 root 账号，就得知道他的密码是什么。
+
+显然我们不知道。
+
+但值得庆幸的是，第一个user是在admin组，所以他可以给root设置密码。
+
+输入以下命令：
+
+```
+sudo passwd root 
+
+[sudo] password for you ：// 此时提示输入你当前账号的密码
+
+Enter new UNIX password:    // 此时提示你输入 root 账号的密码，按enter确认
+// 然后再重复输入一次
+```
+
+这时就搞定了。
+
+
+## 9、设置虚拟机网络模式
 
 有三种网络模式，桥接、NAT、Host-Only。
 
@@ -114,7 +138,8 @@ https://www.oracle.com/technetwork/cn/server-storage/virtualbox/downloads/index.
 
 <img src='./15.jpg'/>
 
-## 9、让Linux可以通过ftp来访问
+
+## 10、让Linux可以通过ftp来访问
 
 参考文章：https://blog.csdn.net/timothy93bp/article/details/77527531
 
@@ -144,17 +169,15 @@ sudo apt-get install vsftpd
 
 这个文件的详细配置说明参考：https://blog.csdn.net/mengtianwxs/article/details/72997092
 
-1. ``listen=NO``改为　``listen=YES``；
-2. 删除 ``write_enable=YES`` 之前的 ``#`` 井号（即注释符号，下同）；
-3. 再取消如下配置前的注释符号：  
-```
-chroot_local_user=YES（是否将所有用户限制在主目录） 
-chroot_list_enable=YES（是否启动限制用户的名单） 
-chroot_list_file=/etc/vsftpd.chroot_list（可在文件中设置多个账号）
-```
-4. 按 esc 返回命令模式，再输入 ``:wq`` ，保存退出；
+1. 删除 ``write_enable=YES`` 之前的 ``#`` 井号（即注释符号，下同）；
+2. 按 esc 返回命令模式，再输入 ``:wq`` ，保存退出；
 
-输入 ``sudo service vsftpd restart`` 重启 ftp 服务器
+输入 ``sudo service vsftpd restart`` 重启 ftp 服务器。
+
+最终文件应该是这样的（如果你的和我不一样，可能是我改了但是漏了没写）：
+
+https://github.com/qq20004604/notes/blob/master/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E8%99%9A%E6%8B%9F%E6%9C%BA%E6%9D%A5%E8%BF%90%E8%A1%8Clinux/vsftpd.conf
+
 
 #### 4、安装 ssh
 
@@ -179,13 +202,14 @@ windows客户端可以下载 FileZilla Client 来进行FTP登录。
 * 协议选 SFTP；
 * 主机输入虚拟机的 IP（查询 ip 通过输入 ``ifconfig`` 命令，找 ``inet`` 后面的那个ip地址）；
 * 端口不填（默认是22）；
-* 输入用户名和密码；
+* 输入用户名和密码（用户名用root）；
+* 其他用户名，可以访问，但上传下载很麻烦，原因是需要处理权限问题。如果需要控制权限则使用其他账号
 
 点击【连接】即可。
 
 <img src='./16.jpg'/>
 
-常见问题：
+**常见问题：**
 
 1. 登录被拒绝怎么办？
     1. 查看是否没有安装 ssh；
